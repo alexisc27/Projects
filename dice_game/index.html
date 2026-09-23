@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dice Duel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1> Dice Game Randomizer</h1>
+  <div class="tag">Pick a mode and roll for it</div>
+
+  <div class="card" id="menu">
+    <div class="modes">
+      <button class="mode-btn" onclick="startGame('solo')">Solo Roll<small>Chase your own high score</small></button>
+      <button class="mode-btn" onclick="startGame('cpu')">Vs Computer<small>Best of 5 rounds against the CPU</small></button>
+      <button class="mode-btn" onclick="startGame('multi')">Local Multiplayer<small>2 players, pass and play, best of 5</small></button>
+    </div>
+  </div>
+
+  <div class="card" id="game">
+    <div class="scoreboard" id="scoreboard"></div>
+    <div class="dice-row" id="diceRow"></div>
+    <div class="status" id="status">Press roll to start</div>
+    <button class="roll-btn" id="rollBtn" onclick="doRoll()">Roll</button>
+    <button class="again-btn" id="againBtn" style="display:none" onclick="startGame(mode)">Play Again</button>
+    <button class="back-btn" onclick="backToMenu()">Back to menu</button>
+    <div class="history" id="history"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
