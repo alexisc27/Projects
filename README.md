@@ -12,7 +12,7 @@ I mostly build backend and full-stack applications, and I've worked alongside a 
 
 ## Tech
 
-Java · Python · JavaScript · C# · C++ · SQL · Spring Boot · React · Node.js · Express · MySQL · PostgreSQL · Docker · Linux
+Java · Python · JavaScript · C# · C++ · SQL · React · Node.js · Express · MySQL · PostgreSQL · Docker · Linux
 
 ## Contact
 
