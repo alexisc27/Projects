@@ -6,9 +6,9 @@ I mostly build backend and full-stack applications, and I've worked alongside a 
 
 ## Projects
 
-- **[Porter Dispatch API](https://github.com/USERNAME/porter-dispatch-api)** — REST API for dispatching hospital porter jobs by priority. Java, Spring Boot, PostgreSQL, Docker.
-- **[Travel Blog](https://github.com/USERNAME/travel-blog)** — Full-stack app with user accounts for logging trips and planning journeys. React, Node.js, Express, MySQL, JWT.
-- **[Therapy Management App](https://github.com/USERNAME/therapy-management-app)** — Manage therapists, clients and sessions. React, Node.js, Express, MySQL.
+- **[Porter Dispatch API](https://github.com/alexis27/porter-dispatch-api)** — REST API for dispatching hospital porter jobs by priority. Java, Spring Boot, PostgreSQL, Docker.
+- **[Travel Blog](https://github.com/alexis27/travel-blog)** — Full-stack app with user accounts for logging trips and planning journeys. React, Node.js, Express, MySQL, JWT.
+- **[Therapy Management App](https://github.com/alexis27/therapy-management-app)** — Manage therapists, clients and sessions. React, Node.js, Express, MySQL.
 
 ## Tech
 
