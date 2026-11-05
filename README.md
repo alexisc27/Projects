@@ -1,21 +1,32 @@
-This is the projects i have completed over the years with a few more to be added in when finished.
-1. Therapy App- A mental health check-in app for tracking mood and journaling.
-2. Dice Randomizer Game- A browser-based dice game with solo, vs-computer, and local multiplayer modes
-3. Travel Blog- A blog platform for sharing trip write-ups and photos
+# Therapy Management System
 
-## Skills
+A full-stack app for managing therapists, clients and therapy sessions, with create, edit and delete for each and validation on both the front end and the API.
 
-Programming languages: Java, Python, SQL, C#, C++
-Technical knowledge: Linux, REST APIs, backend services.
-Tools: ServiceNow (IT service management), Unity, VS Code.
-Databases: MySQL, PostgreSQL.
+**Tech:** React 18, React Router, Axios, Node.js, Express, Sequelize, MySQL.
 
+## Run it
 
-## Currently Working On
+You need **Node.js 18+** and **MySQL** running locally.
 
-- A live data dashboard that pulls from a public API on a schedule, stores historical data, and visualises trends (Python, PostgreSQL, Streamlit)
+1. Check `server/.env` matches your MySQL login (default user `root`, password `password`). The database is created automatically on first run.
+2. Install and start:
 
-## Contact
+```bash
+npm install
+npm run dev
+```
 
-- **Email:** alexcanatui@gmail.com
+The API runs on http://localhost:5000 and the app opens on http://localhost:3000.
 
+## API
+
+| Method | Path | Description |
+| --- | --- | --- |
+| GET/POST | `/api/therapists` | List or create therapists |
+| GET/PUT/DELETE | `/api/therapists/:id` | Read, update or delete one |
+| GET/POST | `/api/clients` | List or create clients |
+| GET/PUT/DELETE | `/api/clients/:id` | Read, update or delete one |
+| GET/POST | `/api/sessions` | List or book sessions (includes therapist and client names) |
+| GET/PUT/DELETE | `/api/sessions/:id` | Read, update or delete one |
+
+Deleting a therapist or client also deletes their sessions.
