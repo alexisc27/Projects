@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: porter-dispatch-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/porterdispatch}
+    username: ${DB_USER:porter}
+    password: ${DB_PASSWORD:porter}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+server:
+  port: ${PORT:8080}
